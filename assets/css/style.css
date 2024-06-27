@@ -96,11 +96,13 @@ h1 {
 }
 
 /* Ajuste para pantallas más pequeñas */
-@media (max-width: 768px) {
+@media (max-width: 600px) {
     .sub-container {
         flex: 1 1 100%; /* En pantallas pequeñas, cada contenedor ocupará el 100% */
+    
     }
 }
+
 
 
 
@@ -131,7 +133,7 @@ h1 {
     background: linear-gradient(to right, #f7eded, #00ffbfa8); 
     border-radius: 10px; 
     padding: 15px;
-    width: 50%; 
+    width: 100%; 
     text-align: center; 
     transition: transform 0.3s ease, background-color 0.3s ease; 
 }
@@ -157,7 +159,7 @@ h1 {
     background: linear-gradient(to right, #ffffff00, #ffffff00); 
     border-radius: 10px; 
     padding: 20px;
-    width: 30%; 
+    width: 100%; 
     text-align: center; 
     transition: transform 0.3s ease, background-color 0.3s ease; 
 }
@@ -242,7 +244,7 @@ h1 {
     background: linear-gradient(to right, #00fdfdb7, #0428f3e8); 
     border-radius: 10px; 
     padding: 20px;
-    width: 50%; 
+    width: 100%; 
     text-align: center; 
     transition: transform 0.3s ease, background-color 0.3s ease; 
 }
@@ -271,7 +273,7 @@ h1 {
     background: linear-gradient(to right, #1100fcaf, #00d9ffa8); 
     border-radius: 10px; 
     padding: 20px;
-    width: 65%; 
+    width: 100%; 
     text-align: center; 
     height: auto; 
 
@@ -313,15 +315,15 @@ body {
     color: rgb(255, 255, 255); 
     width: 100%; 
     text-align: center; 
-    padding: 20px; 
+    padding: 25px; 
     position: relative; 
-    bottom: 20; 
-    left: 0; 
+    bottom: 0; 
+  
     transform: translateY(100px); 
 }
 
 .box_footer {
-    border-radius: 10px; 
+    border-radius: 0px; 
     padding: 20px;
     width: 100%;
 }
@@ -412,7 +414,7 @@ body {
 
 
 
-/* Estilos para el encabezado */
+/* Estilos para el encabezado esto es el menu*/
 .top-header {
     background-color: #000000; 
     color: #fc03be; 
@@ -431,15 +433,22 @@ body {
 
 
 /*Menu superior */
+
 .main-menu ul {
     list-style-type: none; 
     margin: 0;
     padding: 0;
     display: flex;
+    flex-direction: row; 
+    justify-content: flex-start; 
 }
 
 .main-menu ul li {
     margin-right: 20px; 
+}
+
+.main-menu ul li:last-child {
+    margin-right: 0; 
 }
 
 .main-menu ul li a {
@@ -451,6 +460,28 @@ body {
 .main-menu ul li a:hover {
     background-color: #555; 
 }
+
+
+@media only screen and (max-width: 600px) {
+    .main-menu ul {
+        flex-direction: column; 
+        align-items: flex-start; 
+        list-style-type: square; 
+    }
+
+    .main-menu ul li {
+        margin-right: 0; 
+        margin-bottom: 10px; 
+    }
+}
+
+
+
+
+
+
+
+
 
 
 
