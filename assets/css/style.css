@@ -32,6 +32,9 @@ h1 {
    
   }
 
+p {
+    text-align: center;
+}
 
 
   /*linea para seaparar textos*/
@@ -77,18 +80,18 @@ h1 {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 20px;
+    gap: 0px;
     padding: 20px;
     background-color: #f4f4f4;
 }
 
 /* Estilo para los sub-contenedores */
 .sub-container {
-    flex: 1 1 calc(100% - 20px); /* Se asegura de que cada contenedor ocupe 50% menos el gap */
+    flex: 1 1 calc(100% - 0px); 
     background-color: #fff;
     padding: 15px;
-    border: 1px solid #ddd;
-    border-radius: 8px;
+    border: 0px solid #ddd;
+    border-radius: 0px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     box-sizing: border-box;
 	text-align: center;
@@ -98,7 +101,7 @@ h1 {
 /* Ajuste para pantallas más pequeñas */
 @media (max-width: 600px) {
     .sub-container {
-        flex: 1 1 100%; /* En pantallas pequeñas, cada contenedor ocupará el 100% */
+        flex: 1 1 100%; 
     
     }
 }
@@ -125,6 +128,7 @@ h1 {
     justify-content: center;
     align-items: flex-start; 
     height: auto; 
+    width: auto;
     margin-top: 5vh; 
     text-align: center,justify; 
 }
@@ -133,9 +137,16 @@ h1 {
     background: linear-gradient(to right, #f7eded, #00ffbfa8); 
     border-radius: 10px; 
     padding: 15px;
-    width: 100%; 
+    width: 40%; 
+    height: 40%;
     text-align: center; 
     transition: transform 0.3s ease, background-color 0.3s ease; 
+}
+@media (max-width: 600px) {
+    .box {
+        width: 90%;
+        height: 90%;
+    }
 }
 
 .box:hover{
@@ -152,16 +163,21 @@ h1 {
     justify-content: center; 
     align-items: flex-start; 
     height: auto; 
-    margin-top: 20vh; 
+    margin-top: 5vh; 
     text-align: center; 
 }
 .box3 {
     background: linear-gradient(to right, #ffffff00, #ffffff00); 
     border-radius: 10px; 
     padding: 20px;
-    width: 100%; 
+    width: 40%; 
     text-align: center; 
     transition: transform 0.3s ease, background-color 0.3s ease; 
+}
+@media (max-width: 600px) {
+    .box3 {
+        width: 100%;
+    }
 }
 
 .box3:hover{
@@ -212,14 +228,20 @@ h1 {
     flex-direction: column;
     justify-content: flex-start; 
     align-items: center;
-    width: auto;
-    height: 40%;
+    width: 325px;
+    height: 325px;
     background-color: azure;
     border-radius: 20px;
     margin: 30px;
     box-shadow: 0 2px 4px rgba(0,0,0,0.1);
     padding: 15px;
     transition: transform 0.3s ease, background-color 0.3s ease; 
+}
+@media (max-width: 600px) {
+    .box_continuos {
+        width: 100%;
+        height: 100%;
+    }
 }
 .box_continuos:hover{
     background-color: #ffffff; 
@@ -244,9 +266,14 @@ h1 {
     background: linear-gradient(to right, #00fdfdb7, #0428f3e8); 
     border-radius: 10px; 
     padding: 20px;
-    width: 100%; 
+    width: 50%; 
     text-align: center; 
     transition: transform 0.3s ease, background-color 0.3s ease; 
+}
+@media (max-width: 600px) {
+    .box_table {
+        width: 100%;
+    }
 }
 .box_table:hover{
     background-color: #ffffff;
@@ -273,12 +300,14 @@ h1 {
     background: linear-gradient(to right, #1100fcaf, #00d9ffa8); 
     border-radius: 10px; 
     padding: 20px;
-    width: 100%; 
+    width: 70%; 
     text-align: center; 
     height: auto; 
-
-
-
+}
+@media (max-width: 600px) {
+    .box5 {
+        width: 100%;
+    }
 }
 
 
@@ -291,12 +320,12 @@ h1 {
 body {
     margin: 0;
     padding: 0;
-    min-height: 180vh;
+    min-height: 0vh;
     position: relative;
 }
 
 .content {
-    padding-bottom: 80px; 
+    padding-bottom: 0px; 
 }
 
 .large-box {
@@ -318,14 +347,16 @@ body {
     padding: 25px; 
     position: relative; 
     bottom: 0; 
-  
     transform: translateY(100px); 
+    
 }
 
 .box_footer {
     border-radius: 0px; 
-    padding: 20px;
+    padding: 25px;
     width: 100%;
+    text-align: center;
+    align-content: center;
 }
 
 
@@ -400,7 +431,7 @@ body {
 }
 
 .gif {
-    width: 150px; 
+    width: auto; 
     height: auto; 
 }
 
@@ -410,6 +441,11 @@ body {
 
 }
 
+.gif3 {
+    width: 130px; 
+    height: 125px; 
+
+}
 
 
 
@@ -573,7 +609,7 @@ body {
    .container_button {
     position: fixed;
     bottom: 0;
-    right: 34px;
+    right: 70px;
     width: 5%; 
     height: 10vh; 
     background-color: rgba(255, 255, 255, 0); 
@@ -588,6 +624,6 @@ body {
     color: #ffffff; 
     border-radius: 10px; 
     padding: 20px;
-    text-align: center; 
+    text-align: right; 
     width: 100%; 
 }
